@@ -5,8 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:VisualProcessMonitor"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
-    </Grid>
+        Title="Monitor Process" Height="350" Width="525">
+    <StackPanel Orientation="Horizontal">
+        <Button Name="btnStart" Content="Start" Click="Process_Start_Click" Width="120" Height="20" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="8"/>
+        <Button Name="btnCapture" Content="Capture" IsEnabled="False" Click="Capture_Click" Width="120" Height="20" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="8"/>
+    </StackPanel>
 </Window>
